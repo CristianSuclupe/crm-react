@@ -1,12 +1,12 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Layout from '../components/Layout';
-import NuevoCliente from '../pages/NuevoCliente';
+import NuevoCliente, { action as nuevoClienteAction } from '../pages/NuevoCliente';
 import Index, { loader as clientesLoader } from '../pages/Index';
-import { NUEVOCLIENTE } from './routes';
+import { HOME, NUEVOCLIENTE } from './routes';
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: HOME,
         element: <Layout />, 
         children: [
             {
@@ -16,7 +16,8 @@ const router = createBrowserRouter([
             },
             {
                 path: NUEVOCLIENTE,
-                element: <NuevoCliente />
+                element: <NuevoCliente />,
+                action: nuevoClienteAction
             }
         ]
     },
