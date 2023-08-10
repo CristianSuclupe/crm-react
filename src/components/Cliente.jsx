@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
+import { EDITAR_CLIENTE } from '../router/routes'
 
 const Cliente = ({cliente}) => {
 
+    const navigate = useNavigate()
     const { nombre, empresa, email, telefono, id } = cliente
 
     return (
@@ -17,6 +20,7 @@ const Cliente = ({cliente}) => {
                 <button
                     type="button"
                     className="text-blue-600 hover:text-blue-700 font-bold uppercase text-xs"
+                    onClick={() => navigate(EDITAR_CLIENTE.replace(':clienteId', id))}
                 >
                     Editar
                 </button>
