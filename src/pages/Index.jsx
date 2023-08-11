@@ -2,7 +2,7 @@ import { useLoaderData } from 'react-router-dom'
 import { obtenerClientes } from '../data/clientes'
 import Cliente from '../components/Cliente';
 
-export function loader(){
+export const loader = () => {
     const clientes = obtenerClientes()
     return clientes
     
@@ -10,7 +10,6 @@ export function loader(){
 const Index = () => {
 
     const clientes = useLoaderData();
-    console.log(clientes)
     return (
         <>
             <h1 className="font-black text-4xl text-blue-900">Clientes</h1>

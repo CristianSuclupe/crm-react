@@ -22,13 +22,6 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 4,
-      "nombre": "Miguel",
-      "telefono": 319381983,
-      "email": "miguel@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
       "id": 5,
       "nombre": "Pedro",
       "telefono": 1398198938,
@@ -36,12 +29,20 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "nombre": "Cristian",
+      "nombre": "Cristian actualizado",
       "empresa": "no se",
       "email": "cristian2.10@hotmail.com",
       "telefono": "980212715",
       "notas": "algo",
       "id": 6
+    },
+    {
+      "nombre": "gggg",
+      "empresa": "www",
+      "email": "cristiansuclupe2.10.2000@gmail.com",
+      "telefono": "980212715",
+      "notas": "tttt",
+      "id": 7
     }
   ]
 }

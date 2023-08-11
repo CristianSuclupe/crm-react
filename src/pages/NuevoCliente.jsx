@@ -4,7 +4,7 @@ import Formulario from "../components/Formulario"
 import Errores from "../components/Errores"
 import { agregarCliente } from '../data/clientes'
 
-export async function action({request}) {
+export const action = async ({request}) => {
     const formData = await request.formData()
     const datos = Object.fromEntries(formData)
     const email = formData.get('email')
